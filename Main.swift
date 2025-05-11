@@ -120,8 +120,10 @@ let secondBalloon = Balloon(xPosition: 25, yPosition: 85, color: .pink, id: 2)
 let gameSpike = Spike(xPosition: 0)
 
 // Print initial positions and colors of the balloons and spike
-print("Balloon \(firstBalloon.getBalloonID()) is at (\(firstBalloon.getXPosition()), \(firstBalloon.getYPosition())) and is \(firstBalloon.getBalloonColor())")
-print("Balloon \(secondBalloon.getBalloonID()) is at (\(secondBalloon.getXPosition()), \(secondBalloon.getYPosition())) and is \(secondBalloon.getBalloonColor())")
+print("Balloon \(firstBalloon.getBalloonID()) is at (\(firstBalloon.getXPosition()), \(firstBalloon.getYPosition())) " +
+      "and is \(firstBalloon.getBalloonColor())")
+print("Balloon \(secondBalloon.getBalloonID()) is at (\(secondBalloon.getXPosition()), \(secondBalloon.getYPosition())) " +
+      "and is \(secondBalloon.getBalloonColor())")
 print("Spike is at x = \(gameSpike.getSpikeXPosition())\n")
 
 // Move balloons by a certain amount
@@ -129,8 +131,10 @@ firstBalloon.moveBalloonHorizontally(by: 34, vertically: 12)
 secondBalloon.moveBalloonHorizontally(by: 43, vertically: 14)
 
 // Print positions after movement
-print("Balloon \(firstBalloon.getBalloonID()) is now at (\(firstBalloon.getXPosition()), \(firstBalloon.getYPosition())) and is \(firstBalloon.getBalloonColor())")
-print("Balloon \(secondBalloon.getBalloonID()) is now at (\(secondBalloon.getXPosition()), \(secondBalloon.getYPosition())) and is \(secondBalloon.getBalloonColor())")
+print("Balloon \(firstBalloon.getBalloonID()) is now at (\(firstBalloon.getXPosition()), \(firstBalloon.getYPosition())) " +
+      "and is \(firstBalloon.getBalloonColor())")
+print("Balloon \(secondBalloon.getBalloonID()) is now at (\(secondBalloon.getXPosition()), \(secondBalloon.getYPosition())) " +
+      "and is \(secondBalloon.getBalloonColor())")
 print("Spike is at x = \(gameSpike.getSpikeXPosition())\n")
 
 // Move the spike to the same x position as the first balloon
@@ -144,7 +148,8 @@ print("Spike is at x = \(gameSpike.getSpikeXPosition())\n")
 firstBalloon.moveBalloonHorizontally(by: 0, vertically: -53)
 
 // Print final position before popping attempt
-print("Balloon \(firstBalloon.getBalloonID()) is now at (\(firstBalloon.getXPosition()), \(firstBalloon.getYPosition())) and is \(firstBalloon.getBalloonColor())")
+print("Balloon \(firstBalloon.getBalloonID()) is now at (\(firstBalloon.getXPosition()), \(firstBalloon.getYPosition())) " +
+      "and is \(firstBalloon.getBalloonColor())")
 print("Spike is at x = \(gameSpike.getSpikeXPosition())\n")
 
 // Attempt to pop first and second balloons
